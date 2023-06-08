@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/(pone aca el archivo css)">
+    <title>Formulario - Desafio 6</title>
+</head>
+<body>
+
+    <!-- Echo por Pedro Fernández y Leónidas Nuñez -->
+    
+    <h1>Vení al Gym!</h1>
+
+    <div>
+
+        <h2>Datos Personales</h2>
+
+        <form>
+
+            <label for="nombre">Nombre:*</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="apellido">Apellido:*</label>
+            <input type="text" name="apellido" id="apellido" required>
+
+            <label for="documento">Documento:*</label>
+            <input type="text" name="documento" id="documento" required>
+
+            <label for="nacionalidad">Nacionalidad:*</label>
+            
+            <select id="nacionalidad" name="nacionalidad" required>
+
+              <option value="volvo">Argentina</option>
+              <option value="saab">Chile</option>
+              <option value="fiat">Uruguay</option>
+              <option value="audi">Venezuela</option>
+
+            </select>
+
+            <label for="contanos">Contanos un poco de vos...</label>
+            <textarea name="contanos" id="contanos"></textarea>
+                    
+            <label for="sexo">Sexo:*</label>
+
+            <input type="radio" id="femenino" name="sexo" value="for" required>
+            <label for="femenino">Femenino</label>
+
+            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="otros" name="sexo" value="otros" required>
+            <label for="otros">Otros</label>
+
+        </form>
+
+    </div>
+
+    <div>
+
+        <h2>Datos de Contaco</h2>
+
+        <form>
+
+            <label for="telefono">Teléfono:*</label>
+            <input type="text" name="telefono" id="telefono" placeholder="Código de área y número">
+
+            <label for="mail">Durección de correo electrónico:*</label>
+            <input type="email" name="mail" id="mail" placeholder="Ej: mail@gmail.com" required>
+
+        </form>
+
+    </div>
+
+    <div>
+
+        <h2>Actividades</h2>
+
+        <p>Por favor, indicá cuáles actividades te interesan.</p>
+
+        <form>
+
+            <h3>Sede Palermo:</h3>
+
+            <input type="checkbox" id="deporte1" name="deporte1" value="basquet">
+            <label for="deporte1">Básquet</label>
+            <input type="checkbox" id="deporte2" name="deporte2" value="boxeo">
+            <label for="deporte2">Boxeo</label>
+            <input type="checkbox" id="deporte3" name="deporte3" value="futbol">
+            <label for="deporte3">Fútbol</label>
+            <input type="checkbox" id="deporte4" name="deporte4" value="tenis">
+            <label for="deporte4">Tenis</label>
+            
+            <h3>Sede Rosario:</h3>
+
+            <input type="checkbox" id="deporte1" name="deporte1" value="basquet">
+            <label for="deporte1">Básquet</label>
+            <input type="checkbox" id="deporte2" name="deporte2" value="futbol">
+            <label for="deporte2">Fútbol</label>
+            <input type="checkbox" id="deporte3" name="deporte3" value="rugby">
+            <label for="deporte3">Rugby</label>
+            <input type="checkbox" id="deporte4" name="deporte4" value="voley">
+            <label for="deporte4">voley</label>
+
+        </form>
+
+    </div>
+
+    <input type="checkbox" id="condiciones" name="condiciones" required>
+    <label for="condiciones">Acepto las condiciones*</label>
+
+    <input type="checkbox" id="novedades" name="novedades">
+    <label for="novedades">Deseo recibir novedades</label>
+
+    <p>*: campo obligatorio.</p>
+
+    <input type="submit" value="Iniciar Afiliación" class="button">
+
+    <a href="index.html" class="button">Restablecer</a>
+
+</body>
+</html>
